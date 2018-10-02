@@ -1,12 +1,12 @@
 # <Asgn-5-1>
 
-...I think that based on the fact that students want to get more information about the courses and they are tired
+<br />I think that based on the fact that students want to get more information about the courses and they are tired
 of checking whether a course has empty space several times a day online, I want to design a software that could
 test students about the course information when they are allowed to choose course.
-...When students are allowed to choose courses, they will receive a text message giving them a list of recommended
+<br />When students are allowed to choose courses, they will receive a text message giving them a list of recommended
 courses based on their years and previous courses. Thus, students can use that information along with the adviceds
 from their advisors/parents/friends to find the courses that they fit most.
-...On the Vanderbilt's course selection system, students can mark a now fully filled course as "Interested".
+<br />On the Vanderbilt's course selection system, students can mark a now fully filled course as "Interested".
 Thus, whenever that course has available empty spaces, students will receive a text message about that. In this
 way, students do not have to check course avalability online several times a day.
 
