@@ -71,3 +71,22 @@ way, students do not have to check course avalability online several times a day
 <br />From interviewer1: The recommended courses
 <br />From interviewer2: The course difficulty
 <br />From interviewer3: The course syllabus
+
+# Requirements
+<br />The overall requirement for my application is to build an application that could send text messages to students 
+when they have access to enroll courses. The background is that students can't get much help from the course enrollment 
+system and students have to often check online to see whether their deisred courses have openings. From the product perspective,
+we may need to store the data about all students with their recommended courses in the database. If one database can not
+support all the data, we need to get several databases to shard all the data. And since we only want to send text messages
+to students at certain times, we also need constraints on the sending process. 
+
+# Development Approach
+<br /> When developing this software, it is desirable to design it from the backend to the frontend. For the backend,
+we may use the MySQl database to store all the user data and the courses as well as the performance on thoses courses.
+After that, we could use machine learning model to analysis thoses courses and based on those data, get a result of
+the recommended courses. After we get the recommended courses of each student, we could use a schedule pattern to 
+make sure we send the recommended courses at the right time. Since this data may become huge, we may need to store it 
+all different databases. We could use hashing based on the student id to determine which database to store the student
+data. After we finished about the back end part, we could build the front end part such as what is the exact message we 
+want to send. After all thoses things is built, we could first test on only a small part of students, if everything is 
+fine, we can use all students.
